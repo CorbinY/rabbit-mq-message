@@ -1,6 +1,9 @@
 package org.corbin.rabbit_mq_message.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +17,10 @@ import java.io.Serializable;
  */
 @Entity
 @Data
+@Builder
 @Table(name = "user_info")
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserInfo implements Serializable {
     @Id
 //    @Column(name = "id")
